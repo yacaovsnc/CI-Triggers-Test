@@ -1,0 +1,17 @@
+trigger:
+  branches:
+    include:
+    - master
+    - refs/tags/*
+
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo "Build.SourceBranch=$BUILD_SOURCEBRANCH"
+    echo "Build.SourceBranchName=$BUILD_SOURCEBRANCHNAME"
+  displayName: 'Check build variables for the branch'
