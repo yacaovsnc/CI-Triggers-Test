@@ -2,6 +2,8 @@ trigger:
   branches:
     include:
     - master
+    - topic/*
+    - '*/brcrista/*'
     - refs/tags/branch-tag*
     - refs/tags/*-rc
 
