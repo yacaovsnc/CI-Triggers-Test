@@ -7,8 +7,7 @@ trigger:
     - refs/tags/branch-tag*
     - refs/tags/*-rc
 
-pool:
-  vmImage: 'Ubuntu 16.04'
+pool: Default
 
 steps:
 - bash: |
