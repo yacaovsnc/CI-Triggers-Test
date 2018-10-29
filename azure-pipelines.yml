@@ -15,6 +15,3 @@ steps:
     echo "Build.SourceBranch=$BUILD_SOURCEBRANCH"
     echo "Build.SourceBranchName=$BUILD_SOURCEBRANCHNAME"
   displayName: 'Check build variables for the branch'
-
-- bash: exit 1
-  displayName: Fail on purpose
